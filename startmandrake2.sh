@@ -14,6 +14,9 @@ done
 
 xhost +local:
 
+# Fix the sound permissions
+chmod g+rw /dev/dsp
+
 touch "$signal_x_ready" # tell the outer system that our X is ready.
 
 su georges -c "startkde"
