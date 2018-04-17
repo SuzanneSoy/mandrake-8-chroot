@@ -3,6 +3,10 @@ GColorChooser became better
 Charmap became better (but by far not perfect)
 utf-8 support was not quite there yet
 Cannot drag and drop a window using the miniature in the pager
+su was a pain (quoting and always typing the password), sudo is better
+the configuration menus were sometims a bit disorganised, and spread across several "control centers" (Mandrake's, KDE's, ...)
 
 Pros:
 kioslaves allowed to view man pages and info pages with hyperlinks and decent formatting
+arts-builder (nice & fun synthesizer)
+lots of configuration menus
