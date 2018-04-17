@@ -37,7 +37,7 @@ echo =================================
 echo =================================
 set -x
 set +e
-(source /home/georges/.profile; sleep 5; DISPLAY=:1 xfce4-terminal) &
+(source /home/georges/.profile; sleep 8; cd /home/georges/; DISPLAY=:1 xfce4-terminal --geometry=80x25) &
 echo ---------------------------------
 echo ---------------------------------
 echo ---------------------------------
