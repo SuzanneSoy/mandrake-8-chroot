@@ -1,0 +1,8 @@
+Cons:
+GColorChooser became better
+Charmap became better (but by far not perfect)
+utf-8 support was not quite there yet
+Cannot drag and drop a window using the miniature in the pager
+
+Pros:
+kioslaves allowed to view man pages and info pages with hyperlinks and decent formatting
