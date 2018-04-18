@@ -1,0 +1,14 @@
+# install osspd
+
+sudo adduser georges pulse-access
+sudo adduser pulse audio
+
+https://unix.stackexchange.com/questions/382601/how-to-prevent-sound-mute-when-switching-user#382969
+=> Start pulse audio in system mode: pulseaudio --system=yes
+
+# to re-enable detection of headphones plugged in / out
+pactl load-module module-switch-on-port-available
+
+sudo service osspd status
+
+don't forget to have the same user ID in the chroot and outside!

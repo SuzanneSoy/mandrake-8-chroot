@@ -1,0 +1,4 @@
+sudo cp -ai "$mnt/etc/resolv.conf" "/etc/resolv.conf.bak-$(date)"
+sudo ln -sf "$HOME/outside_of_chroot/etc/resolv.conf" "$mnt/etc/"
+echo "127.0.0.1 $(hostname)"        | sudo tee -a "$mnt/etc/hosts"
+echo "127.0.0.1 home6.netscape.com" | sudo tee -a "$mnt/etc/hosts"

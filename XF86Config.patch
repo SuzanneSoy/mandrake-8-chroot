@@ -1,0 +1,34 @@
+--- /mnt/etc/X11/XF86Config.bak	2018-04-18 23:28:50.000000000 +0200
++++ /mnt/etc/X11/XF86Config	2018-04-18 23:29:01.000000000 +0200
+@@ -396,21 +396,31 @@
+ Section "Screen"
+     Driver "fbdev"
+     Device      ""
+     Monitor     "Generic|SVGA haute fréquence, 1024x768 à 70 Hz"
+     DefaultColorDepth 16
+     Subsection "Display"
+         Depth       8
+         Modes       "default"
+         ViewPort    0 0
+     EndSubsection
+     Subsection "Display"
+         Depth       15
+         Modes       "default"
+         ViewPort    0 0
+     EndSubsection
+     Subsection "Display"
+         Depth       16
+         Modes       "default"
+         ViewPort    0 0
+     EndSubsection
++    Subsection "Display"
++        Depth       24
++        Modes       "default"
++        ViewPort    0 0
++    EndSubsection
++    Subsection "Display"
++        Depth       32
++        Modes       "default"
++        ViewPort    0 0
++    EndSubsection
+ EndSection
