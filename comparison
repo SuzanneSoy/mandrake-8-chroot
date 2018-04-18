@@ -5,8 +5,43 @@ utf-8 support was not quite there yet
 Cannot drag and drop a window using the miniature in the pager
 su was a pain (quoting and always typing the password), sudo is better
 the configuration menus were sometims a bit disorganised, and spread across several "control centers" (Mandrake's, KDE's, ...)
+visual bell (I'm sure I saw a config option to disable it, but I cannot find it again!)
+font subpixel hinting on my screen is bad (probably just a configuration option that I didn't find yet)
+kmail didn't support IMAP
 
 Pros:
 kioslaves allowed to view man pages and info pages with hyperlinks and decent formatting
-arts-builder (nice & fun synthesizer)
 lots of configuration menus
+lots of documentation, well translated, with howtos, etc. and it is put forward
+ability to change the window manager / desktop environment on the fly, at least for some of them.
+nice background pictures in configuration dialogs (e.g. KDE control center, Mozilla Messenger's configuration...)
+easy customization of menus, of the task bar, these things have been gradually discarded in "modern" desktop environments.
+glade (GUI editor) seemed better at the time (more widgets, more intuitive flow as it was a simple click to create an element inside a container, now you sometimes have to go through some right-click maze for some containers e.g. toolbars) + there seemed to be some extensive support for some database engine, which seems to have disappeared.
+browsers actually already supported CSS. My website (which uses a very simple CSS stylesheet, but wasn't designed (to my shame) with the goal of backward-compatibility) looks great on Mozilla, Konqueror and Galeon. The fonts could be antialiased for it to look nicer, and that's it.
+
+Software which disappeared:
+arts-builder (nice & fun synthesizer)
+khexedit
+xtraceroute, doesn't exist anymore
+
+What is compatible:
+X display (new applications are mostly compatible with old XFree86, not the other way round: old applications hang when connecting to new X server)
+Sound (with osspd)
+
+What is *not* compatible:
+CPU usage (it seems the API for that in /proc changed a bit)
+arts-builder (possibly because it checks for its CPU usage)
+
+
+Staroffice:
++ full-featured
++ well engineered:
+  e.g. connectors between objects
+  -> Some functions are already present in menus, have an icon, but are greyed out.
+     The feature is actually implemented and can be done by using another menu entry with default settings (e.g. the default connector) then changing it with right-click properties
+     This means that the product achitecture was thought in advance and dispatched to several people/tasks (icon creators, create the menu entries, implement the functionality, connect the menu entry to said functionality),
+     and only the last one didn't get implmented in time to make it into the release. This is in contrast with the approach of implementing things "on the fly"
++ the guidelines when creating a new presentation. Cute & nice.
+- right-click -> personalize on menus is slightly more confusing than in Office 97
+- templates in impress: there's a preview when creating a new presentation, but not when changing the template for a single slide
+- a few lists for selecting things (font, ...) are a bit too small to be practical, and their containing window cannot be resized.
