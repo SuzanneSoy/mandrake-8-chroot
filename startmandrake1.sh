@@ -40,6 +40,8 @@ fi
 
 echo -e "\033[1;31mNOTE: to access sound, the user inside the chroot must have the same UID as the user outside of the chroot!\033[m"
 
+read -p "Press enter to continue, or ctrl-c to go change this manually." || exit 1
+
 signal_x_ready="$(tempfile)"
 
 sudo chroot "$mnt" /home/georges/Documents/git/my/config-mandrake-chroot/startmandrake2.sh "$signal_x_ready" &
